@@ -6,11 +6,12 @@ public class Test {
        for (int i = 0; i < 1000; i++){
         die1.rollDie();
         die2.rollDie();
-        int sum = die1.getNumber()+ die2.getNumber();
+        var sum = die1.getNumber() + die2.getNumber();
+        
         frequencyOfSums[sum]++;
        }
        for (int i = 2; i <= 12; i++){
-        System.out.println("sum af" + i + "sum af terningerne er" + sum);
+        System.out.println("sum af" + i);
     
        }
        }
