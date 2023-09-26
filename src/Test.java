@@ -11,7 +11,7 @@ public class Test {
         frequencyOfSums[sum]++;
        }
        for (int i = 2; i <= 12; i++){
-        System.out.println("sum af" + i);
+        System.out.println("sum" + i);
     
        }
        }
