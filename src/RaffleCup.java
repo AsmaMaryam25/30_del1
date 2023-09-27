@@ -23,24 +23,26 @@ public class RaffleCup {
             player1 += die1.getNumber() + die2.getNumber();
             System.out.println("Points: " + player1);
 
-            System.out.println();
-            System.out.println("------------------------");
-            System.out.println();
-            System.out.println("Player 2:");
-            System.out.println("Press enter to roll dice");
+            if (player1 < 40 && player2 < 40) {
+                System.out.println();
+                System.out.println("------------------------");
+                System.out.println();
+                System.out.println("Player 2:");
+                System.out.println("Press enter to roll dice");
 
-            scanner.nextLine();
+                scanner.nextLine();
 
-            die1.rollDie();
-            die2.rollDie();
+                die1.rollDie();
+                die2.rollDie();
 
-            System.out.println("Sum of rolled dice: " + (die1.getNumber() + die2.getNumber()));
-            player2 += die1.getNumber() + die2.getNumber();
-            System.out.println("Points: " + player2);
+                System.out.println("Sum of rolled dice: " + (die1.getNumber() + die2.getNumber()));
+                player2 += die1.getNumber() + die2.getNumber();
+                System.out.println("Points: " + player2);
 
-            System.out.println();
-            System.out.println("------------------------");
-            System.out.println();
+                System.out.println();
+                System.out.println("------------------------");
+                System.out.println();
+            }
         }
 
         if (player1 > player2) {
@@ -48,6 +50,6 @@ public class RaffleCup {
         } else {
             System.out.println("Player 2 wins!");
         }
-scanner.close();
+        scanner.close();
     }
 }
