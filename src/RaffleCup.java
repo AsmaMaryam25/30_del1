@@ -48,6 +48,6 @@ public class RaffleCup {
         } else {
             System.out.println("Player 2 wins!");
         }
-
+scanner.close();
     }
 }

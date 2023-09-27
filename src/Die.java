@@ -14,6 +14,6 @@ public class Die {
     Random random = new Random();
 
     public void rollDie() {
-        number = random.nextInt(6)+1;
+        number = random.nextInt(7);
     }
 }
